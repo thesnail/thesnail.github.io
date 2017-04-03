@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>React Native搭建开发环境</title>
+  <meta name="description" content="　　React Native的开发环境配置直接参考官方文档即可完成，不过对小白来说东西有点多，有些名词不是很好理解，这里就(官方的安装文档稍微展开说一下。http://reactnative.com/">
+  <meta name="author" content="leopardpan">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="React Native搭建开发环境">
+  <meta name="twitter:description" content="　　React Native的开发环境配置直接参考官方文档即可完成，不过对小白来说东西有点多，有些名词不是很好理解，这里就(官方的安装文档稍微展开说一下。http://reactnative.com/">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="React Native搭建开发环境">
+  <meta property="og:description" content="　　React Native的开发环境配置直接参考官方文档即可完成，不过对小白来说东西有点多，有些名词不是很好理解，这里就(官方的安装文档稍微展开说一下。http://reactnative.com/">
+  
+  <link rel="icon" type="image/png" href="/images/favicon.ico" />
+  <link href="/images/favicon.ico" rel="shortcut icon" type="image/png">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://scott-cry.win//2017/04/React-Native%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+  <link rel="alternate" type="application/rss+xml" title="Scott Wang" href="http://scott-cry.win//feed.xml">
+  
+  <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
+
+<!-- 站点统计 -->
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?83b47e30e35d1b556094ad4bee3b7a23";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- google 统计
+  
+ -->
+</head>
+
+
+  <body>
+
+    <span class="mobile btn-mobile-menu">        
+      <div class="nav_container">
+         <nav class="nav-menu-item" style = "float:right">
+            <i class="nav-menu-item">
+              <a href="/#blog" title="" class="blog-button">  博客主页
+              </a>
+            </i>
+            
+                <i class="nav-menu-item">
+                  <a href="/archive" title="archive" class="btn-mobile-menu__icon">
+                      所有文章
+                  </a>
+                </i>
+            
+                <i class="nav-menu-item">
+                  <a href="/tags" title="tags" class="btn-mobile-menu__icon">
+                      标签
+                  </a>
+                </i>
+            
+                <i class="nav-menu-item">
+                  <a href="/about" title="about" class="btn-mobile-menu__icon">
+                      关于我
+                  </a>
+                </i>
+            
+          </nav>
+      </div>
+    </span>
+    
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url('/images/background-cover.jpg')">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <!-- 头像效果-start -->
+        <div class="ih-item circle effect right_to_left">            
+            <a href="/#blog" title="前往 Scott Wang 的主页" class="blog-button">
+                <div class="img"><img src="/images/avatar.jpg" alt="img"></div>
+                <div class="info">
+                    <div class="info-back">
+                        <h2> 
+                            
+                                Lcry
+                            
+                        </h2>
+                        <p>
+                           
+                                Android/Nodejs
+                            
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- 头像效果-end -->
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for Scott Wang" class="blog-button">Scott Wang</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">个人站</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">欢迎来到我的个人xiao站~</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+        
+        
+
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">博客主页</a></li>
+                
+                  <li class="navigation__item"><a href="/archive" title="archive">所有文章</a></li>
+                
+                  <li class="navigation__item"><a href="/tags" title="tags">标签</a></li>
+                
+                  <li class="navigation__item"><a href="/about" title="about">关于我</a></li>
+                
+              </ul>
+            </nav>
+          </div>          
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel-cover--overlay cover-clear"></div>
+    
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title">React Native搭建开发环境</h1>
+    <div class="post-meta">
+      <img src="/images/calendar.png" width="20px"/> 
+      <time datetime="2017-04-03 00:00:00 +0800" itemprop="datePublished" class="post-meta__date date">2017-04-03</time>  
+         
+      <span id="busuanzi_container_page_pv"> | 阅读：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
+    </div>
+  </header>
+  <section class="post">
+    <p>　　React Native的开发环境配置直接参考官方文档即可完成，不过对小白来说东西有点多，有些名词不是很好理解，这里就(官方的<a href="http://facebook.github.io/react-native/">安装文档</a>稍微展开说一下。<a href="http://reactnative.com/">http://reactnative.com/</a></p>
+
+<p>　　译注：如果<code class="highlighter-rouge">阅读完教程</code>后还碰到很多环境搭建的问题，我们建议你还可以再看看由<a href="http://reactnative.cn/">reactnative.cn</a>提供的<a href="http://v.youku.com/v_show/id_XMTQ4OTYyMjg4MA==.html">环境搭建视频教程</a>、<a href="http://bbs.reactnative.cn/topic/10">windows环境搭建文字教程</a>、以及<a href="http://bbs.reactnative.cn/topic/130">常见问题</a>。</p>
+
+<h2 id="section">安装</h2>
+
+<h3 id="homebrew">1、安装HomeBrew</h3>
+<p>第一: 通过命令行安装HomeBrew</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>ruby -e “$(curl –insecure -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
+</code></pre>
+</div>
+
+<p>第二: 查询HomeBrew的版本</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>XXXXX-Mac:~ scottwang$ brew -v
+Homebrew 1.1.11
+Homebrew/homebrew-core (git revision 8663; last commit 2017-04-02)
+XXXXX-Mac:~ scottwang$
+</code></pre>
+</div>
+
+<p>　　至此说明HomeBrew已经安装成功。</p>
+
+<h3 id="nodejs">2、安装NodeJs</h3>
+<p>使用<a href="http://brew.sh/">Homebrew</a>来安装<a href="https://nodejs.org/">Node.js</a>
+（对解析JS所需的环境node+安装之后你就可以用npm命令了）</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>XXXXXX-Mac:~ scottwang$ brew install node
+......
+XXXXXX-Mac:~ scottwang$ node -v
+v6.10.0
+</code></pre>
+</div>
+
+<p>　　安装完node后建议设置<a href="https://www.baidu.com/s?ie=UTF-8&amp;wd=npm%E9%95%9C%E5%83%8F%E4%BB%A5%E5%8A%A0%E9%80%9F">npm镜像</a>以加速后面的过程（或使用<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=baidu&amp;wd=%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91&amp;oq=npm%25E9%2595%259C%25E5%2583%258F%25E4%25BB%25A5%25E5%258A%25A0%25E9%2580%259F&amp;rsv_pq=ac6ecffc000569a4&amp;rsv_t=a6dfnk2LVwrQb%2BMub1C9r%2F5C4E2fs8%2F7LK8FpawDEhScyN4%2FQESXgaxOu0g&amp;rqlang=cn&amp;rsv_enter=0&amp;rsv_sug3=2&amp;rsv_sug1=1&amp;rsv_sug7=000&amp;inputT=795&amp;rsv_sug4=1384&amp;rsv_sug=1">科学上网工具</a>),因为天朝的网络你懂得。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm config set registry https://registry.npm.taobao.org --global
+npm config set disturl https://npm.taobao.org/dist --global
+</code></pre>
+</div>
+
+<h3 id="react-nativereact-native-cli">3、React Native的命令行工具（react-native-cli）</h3>
+<p>React Native的命令行工具用于执行创建、初始化、更新项目、运行打包服务（packager）等任务。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm install -g react-native-cli
+</code></pre>
+</div>
+
+<p>如果你看到EACCES: permission denied这样的权限报错，那么请参照上文的homebrew译注，修复/usr/local目录的所有权：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo chown -R `whoami` /usr/local
+</code></pre>
+</div>
+
+<h3 id="xcode">4、Xcode</h3>
+<p>React Native目前需要Xcode 7.0 或更高版本。你可以通过App Store或是到<a href="https://developer.apple.com/xcode/downloads/">Apple开发者官网</a>上下载。这一步骤会同时安装Xcode IDE和Xcode的命令行工具。</p>
+
+<p><code class="highlighter-rouge">
+虽然一般来说命令行工具都是默认安装了，但你最好还是启动Xcode，并在Xcode | Preferences | Locations菜单中检查一下是否装有某个版本的Command Line Tools。Xcode的命令行工具中也包含一些必须的工具，比如git等。
+</code>
+### 5、测试安装</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>react-native init reactIOS
+cd reactIOS
+react-native run-ios
+</code></pre>
+</div>
+
+<h3 id="react-nativeide">6、React Native开发工具IDE</h3>
+<p>所谓工欲善其事必先利其器,做React Native开发也和其他应用开发一样，但是工具有很多种，可能每个公司用的也不一样。下节就给大家介绍几款比较好用的IDE:<a href="http://www.sublimetext.com/3">sublime</a>、<a href="https://www.jetbrains.com/webstorm/">webstorm</a>以及官网推荐的<a href="https://atom.io/">Nuclide</a>、<a href="https://code.visualstudio.com/">VSCode</a>-<a href="http://www.vscode.org/">中文</a></p>
+
+<p>转载请注明原地址，LCry的博客：<a href="http://scott-cry.win/">http://scott-cry.win/</a> 谢谢！</p>
+
+  </section>
+</article>
+
+<section>
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一个呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/images/payimg/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>感谢您的支持，我会继续努力的!</p>
+                </div>
+                <div class="shang_payimg">
+                    <img src="/images/payimg/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+              <div class="shang_payimg">    
+                    <img src="/images/payimg/weipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+                <div class="pay_explain">扫码打赏，你说多少就多少</div>
+                <div class="shang_payselect">
+                  <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/images/payimg/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+                  <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/images/payimg/wechat.jpg" alt="微信" /></span>
+                  </div>
+                </div>
+                <div class="shang_info-play">
+                  <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:80%;margin-top: 20px;margin-bottom: 10px;height:40px;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:540px;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:50%;top:50%;margin-left:-280px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{display:block;width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{width:140px;padding:10px;padding-left: 80px; /*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+        
+        <li class="previous">
+            <a href="/2017/04/React-Native%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" data-toggle="tooltip" data-placement="top" title="React Native IDE选型和配置">上一篇：  <span>React Native IDE选型和配置</span>
+            </a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+<section class="post-comments">
+
+  
+    <div class="ds-thread" data-thread-key="/2017/04/React-Native%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" data-title="React Native搭建开发环境" data-url="http://scott-cry.win//2017/04/React-Native%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"></div>
+
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:"Lcry"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+  
+  
+  
+  
+</section>
+
+
+            <section class="footer">
+    <footer>
+        <div class = "footer_div">  
+        <nav class="cover-navigation navigation--social">
+          <ul class="navigation">
+ <!--
+          
+          Weibo
+          <li class="navigation__item_social">
+            <a href="http://weibo.com/5366874726" title="@5366874726 的微博" target="_blank">
+              <i class='social fa fa-weibo fa-2x'></i>
+              <span class="label">Weibo</span>
+            </a>
+          </li>
+          
+ -->
+          
+          <!-- Github -->
+          <li class="navigation__item_social">
+            <a href="https://github.com/thesnail" title="@thesnail 的 Github" target="_blank">
+              <i class='social fa fa-github fa-2x'></i>
+              <span class="label">Github</span>
+            </a>
+          </li>
+          
+          <!--
+          
+
+          
+
+           RSS 
+          <li class="navigation__item_social">
+            <a href="/feed.xml" rel="author" title="RSS" target="_blank">
+              <i class='social fa fa-rss fa-2x'></i>
+              <span class="label">RSS</span>
+            </a>
+          </li>
+          -->
+
+          
+          <!-- Email -->
+          <li class="navigation__item_social">
+            <a href="mailto:my_snail@126.com" title="Contact me">
+              <i class='social fa fa-envelope fa-2x'></i>
+              <span class="label">Email</span>
+            </a>
+          </li>
+          
+
+          </ul>
+        </nav>
+
+        </div>
+
+        <div class = "footer_div">  
+           <p class="copyright text-muted">
+            Copyright &copy; Scott Wang 2017 Theme by <a href="http://thesnail.github.io/">thesnail</a> |
+            <iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=thesnail&repo=thesnail.github.io&type=star&count=true" >
+            </iframe>
+            </p>
+        	<div align="right">
+    			<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+          <!-- 访问统计 -->
+          <span id="busuanzi_container_site_pv">
+            本站总访问量
+            <span id="busuanzi_value_site_pv"></span>次
+          </span>
+
+        </div>
+        <div>
+    </footer>
+</section>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+  </body>
+
+</html>

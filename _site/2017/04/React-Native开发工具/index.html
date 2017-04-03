@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>React Native IDE选型和配置</title>
+  <meta name="description" content="　　React Native 的开发基本上是 Javascript ＋ 系统原生开发语言（Java，Objective-C，Swift），原生语言的开发所用的 IDE 没有多余的选择，Android 平台只能使用 Android Studio（不要告诉我你还在使用 Eclipse），iOS 平台只能使用 XCod...">
+  <meta name="author" content="leopardpan">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="React Native IDE选型和配置">
+  <meta name="twitter:description" content="　　React Native 的开发基本上是 Javascript ＋ 系统原生开发语言（Java，Objective-C，Swift），原生语言的开发所用的 IDE 没有多余的选择，Android 平台只能使用 Android Studio（不要告诉我你还在使用 Eclipse），iOS 平台只能使用 XCod...">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="React Native IDE选型和配置">
+  <meta property="og:description" content="　　React Native 的开发基本上是 Javascript ＋ 系统原生开发语言（Java，Objective-C，Swift），原生语言的开发所用的 IDE 没有多余的选择，Android 平台只能使用 Android Studio（不要告诉我你还在使用 Eclipse），iOS 平台只能使用 XCod...">
+  
+  <link rel="icon" type="image/png" href="/images/favicon.ico" />
+  <link href="/images/favicon.ico" rel="shortcut icon" type="image/png">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://scott-cry.win//2017/04/React-Native%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">
+  <link rel="alternate" type="application/rss+xml" title="Scott Wang" href="http://scott-cry.win//feed.xml">
+  
+  <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
+
+<!-- 站点统计 -->
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?83b47e30e35d1b556094ad4bee3b7a23";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- google 统计
+  
+ -->
+</head>
+
+
+  <body>
+
+    <span class="mobile btn-mobile-menu">        
+      <div class="nav_container">
+         <nav class="nav-menu-item" style = "float:right">
+            <i class="nav-menu-item">
+              <a href="/#blog" title="" class="blog-button">  博客主页
+              </a>
+            </i>
+            
+                <i class="nav-menu-item">
+                  <a href="/archive" title="archive" class="btn-mobile-menu__icon">
+                      所有文章
+                  </a>
+                </i>
+            
+                <i class="nav-menu-item">
+                  <a href="/tags" title="tags" class="btn-mobile-menu__icon">
+                      标签
+                  </a>
+                </i>
+            
+                <i class="nav-menu-item">
+                  <a href="/about" title="about" class="btn-mobile-menu__icon">
+                      关于我
+                  </a>
+                </i>
+            
+          </nav>
+      </div>
+    </span>
+    
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url('/images/background-cover.jpg')">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <!-- 头像效果-start -->
+        <div class="ih-item circle effect right_to_left">            
+            <a href="/#blog" title="前往 Scott Wang 的主页" class="blog-button">
+                <div class="img"><img src="/images/avatar.jpg" alt="img"></div>
+                <div class="info">
+                    <div class="info-back">
+                        <h2> 
+                            
+                                Lcry
+                            
+                        </h2>
+                        <p>
+                           
+                                Android/Nodejs
+                            
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- 头像效果-end -->
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for Scott Wang" class="blog-button">Scott Wang</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">个人站</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">欢迎来到我的个人xiao站~</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+        
+        
+
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">博客主页</a></li>
+                
+                  <li class="navigation__item"><a href="/archive" title="archive">所有文章</a></li>
+                
+                  <li class="navigation__item"><a href="/tags" title="tags">标签</a></li>
+                
+                  <li class="navigation__item"><a href="/about" title="about">关于我</a></li>
+                
+              </ul>
+            </nav>
+          </div>          
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel-cover--overlay cover-clear"></div>
+    
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title">React Native IDE选型和配置</h1>
+    <div class="post-meta">
+      <img src="/images/calendar.png" width="20px"/> 
+      <time datetime="2017-04-03 00:00:00 +0800" itemprop="datePublished" class="post-meta__date date">2017-04-03</time>  
+         
+      <span id="busuanzi_container_page_pv"> | 阅读：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
+    </div>
+  </header>
+  <section class="post">
+    <p>　　React Native 的开发基本上是 Javascript ＋ 系统原生开发语言（Java，Objective-C，Swift），原生语言的开发所用的 IDE 没有多余的选择，Android 平台只能使用 Android Studio（不要告诉我你还在使用 Eclipse），iOS 平台只能使用 XCode，而开发 Javascript 的 IDE 选择就多了，从 FaceBook 官方推荐的 Atom＋Nuclide，到与 Android Studio 同系列的 Javascript IDE WebStorm，再到功能强大的 Sublime Text 3，以及微软推出的 Visual Studio Code 和 decosoftware 专门为 React Native 打造的开源 IDE Deco，甚至 Vim，NodePad++ 等等，都可以用来开发 React Native，唯一的前提能够支持识别 Javascript 语法，识别 JSX 和 React Native API 的智能提醒。接下来我们就来介绍最常用的五款 IDE 的配置和选型。</p>
+
+<h2 id="react-native-ide">React Native IDE</h2>
+
+<h3 id="atom--nuclide">1、Atom + Nuclide</h3>
+<p>　　第一: <a href="https://atom.io/">Atom</a>是由 Github 打造的下一代编程开发利器，支持 Windows、Mac OS X、Linux 三大桌面平台，免费且开源。<a href="https://atom.io/">Atom</a>  支持各种编程语言的代码高亮，同时具备强大的代码补全功能，能够极大的提高编程效率，<a href="https://atom.io/">Atom</a>  本质上是一个文本编辑器，而不是一个 IDE，因此在用来开发 React Native 时需要配合 Nuclide 一起使用。
+<img src="/images/react/20170403/atom.io.png" height="460" width="800" /></p>
+
+<p>　　第二: <a href="https://atom.io/">Atom</a>已经安装成功了，下面开始安装<a href="https://github.com/facebook/nuclide">Nuclide</a>，直接打开Atom软件，点击Atom-&gt; Preferences打开Setting，然后点击install，输入nuclide-installer搜索，进行下载即可
+<img src="/images/react/20170403/nuclide.io.png" height="360" width="800" /></p>
+
+<h3 id="webstorm-ide">2、WebStorm IDE介绍和安装</h3>
+<p>　　我相信做过Web前端的童鞋们，肯定对WebStorm IDE非常的熟悉WebStorm 是jetbrains公司旗下一款JavaScript开发工具。被广大中国JS开发者誉为“Web前端开发神器”、“最强大的HTML5编辑器”、“最智能的JavaScript IDE”等。与IntelliJ IDEA同源，继承了IntelliJ IDEA强大的JS部分的功能。该IDE官网地址:<a href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a>。该新版本已经支持了React了，所以在现如今的开发阶段WebStrom已经算是支持性最好的IDE了，大家有兴趣可以下载使用以下哦~，不过该是收费的,相信你也会有<a href="https://www.baidu.com/s?ie=utf-8&amp;f=3&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=baidu&amp;wd=webstorm%2010%20%E6%B3%A8%E5%86%8C%E7%A0%81&amp;oq=webstorm&amp;rsv_pq=8b460dd700068735&amp;rsv_t=aaacEWo%2BiGh1ZpNk2F8Ye6bDjqd8KJbUPUn9nY22TI1NZAUaZjMI%2FdQCZzI&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_sug3=7&amp;rsv_sug1=6&amp;rsv_sug7=100&amp;rsv_sug2=1&amp;prefixsug=webstorm&amp;rsp=0&amp;rsv_sug4=2224">办法</a>的。</p>
+
+<h3 id="sublime-text-3">3、Sublime Text 3</h3>
+<p>　　Sublime Text 3 是一款广泛使用的代码编辑器，支持 Windows、Mac OS X、Linux 三大桌面平台，它是付费应用，但目前可以无限期的试用。它支持多种编程语言的语法高亮、拥有优秀的代码自动完成功能，还拥有代码片段（Snippet ）的功能，可以将常用的代码片段保存起来，在需要时随时调用，极大的提高编程效率。
+　　一、简单的安装方法
+　　使用Ctrl+`快捷键或者通过View-&gt;Show Console菜单打开命令行，粘贴如下代码：</p>
+
+<p><code class="highlighter-rouge">
+import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+</code></p>
+
+<p>如果顺利的话，此时就可以在Preferences菜单下看到Package Settings和Package Control两个菜单了。
+如有问题 参考:<a href="https://packagecontrol.io/installation#st3">https://packagecontrol.io/installation#st3</a></p>
+
+<p>　　二、安装插件 babel-sublime
+　　支持ES6， React.js, jsx代码高亮，对 JavaScript, jQuery 也有很好的扩展。
+　　安装</p>
+
+<p>　　PC上ctrl+shift+p（MacCmd+shift+p）打开面板
+　　选择Install Package
+　　输入babel安装</p>
+
+<p>　　配置</p>
+
+<p>　　打开.js, .jsx 后缀的文件;</p>
+
+<p>　　打开菜单view，Syntax -&gt; Open all with current extension as… -&gt; Babel -&gt; 　　JavaScript (Babel)，选择babel为默认 javascript 打开syntax</p>
+
+<p>　　修改TAB缩进为空格</p>
+
+<p>　　在sublime text中将TAB缩进直接转化为4个空格，可以按照如下方式操作：</p>
+
+<p>　　菜单栏: Preferences -&gt; Settings – More -&gt; Syntax Specific – User</p>
+
+<p>　　然后添加设置代码就可以了，文件保存在$Packages/User下</p>
+
+<p>　　另：
+　　font_face 设置字体
+　　font_size 设置字体大小</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"font_face"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SourceCodePro"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"font_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tab_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"translate_tabs_to_spaces"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<h3 id="vs-code">3、VS Code</h3>
+<p>　　React Native智能开发工具，可代码提醒的IDE——VS Code。
+　　安装VS Code方法非常简单，去github上下载插件，直接安装在电脑就可以了。
+　　插件地址:<a href="https://github.com/Microsoft/vscode-react-native">https://github.com/Microsoft/vscode-react-native</a>
+　　它具有打开文件夹功能，定位到React Native项目的根目录直接使用文件夹打开功能就可以，这样就可以把整个项目目录放进去了</p>
+
+  </section>
+</article>
+
+<section>
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一个呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/images/payimg/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>感谢您的支持，我会继续努力的!</p>
+                </div>
+                <div class="shang_payimg">
+                    <img src="/images/payimg/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+              <div class="shang_payimg">    
+                    <img src="/images/payimg/weipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+                <div class="pay_explain">扫码打赏，你说多少就多少</div>
+                <div class="shang_payselect">
+                  <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/images/payimg/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+                  <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/images/payimg/wechat.jpg" alt="微信" /></span>
+                  </div>
+                </div>
+                <div class="shang_info-play">
+                  <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:80%;margin-top: 20px;margin-bottom: 10px;height:40px;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:540px;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:50%;top:50%;margin-left:-280px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{display:block;width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{width:140px;padding:10px;padding-left: 80px; /*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+        
+        <li class="previous">
+            <a href="/2017/04/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-toggle="tooltip" data-placement="top" title="HEXO搭建个人博客">上一篇：  <span>HEXO搭建个人博客</span>
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2017/04/React-Native%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" data-toggle="tooltip" data-placement="top" title="React Native搭建开发环境">下一篇：  <span>React Native搭建开发环境</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+<section class="post-comments">
+
+  
+    <div class="ds-thread" data-thread-key="/2017/04/React-Native%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" data-title="React Native IDE选型和配置" data-url="http://scott-cry.win//2017/04/React-Native%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"></div>
+
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:"Lcry"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+  
+  
+  
+  
+</section>
+
+
+            <section class="footer">
+    <footer>
+        <div class = "footer_div">  
+        <nav class="cover-navigation navigation--social">
+          <ul class="navigation">
+ <!--
+          
+          Weibo
+          <li class="navigation__item_social">
+            <a href="http://weibo.com/5366874726" title="@5366874726 的微博" target="_blank">
+              <i class='social fa fa-weibo fa-2x'></i>
+              <span class="label">Weibo</span>
+            </a>
+          </li>
+          
+ -->
+          
+          <!-- Github -->
+          <li class="navigation__item_social">
+            <a href="https://github.com/thesnail" title="@thesnail 的 Github" target="_blank">
+              <i class='social fa fa-github fa-2x'></i>
+              <span class="label">Github</span>
+            </a>
+          </li>
+          
+          <!--
+          
+
+          
+
+           RSS 
+          <li class="navigation__item_social">
+            <a href="/feed.xml" rel="author" title="RSS" target="_blank">
+              <i class='social fa fa-rss fa-2x'></i>
+              <span class="label">RSS</span>
+            </a>
+          </li>
+          -->
+
+          
+          <!-- Email -->
+          <li class="navigation__item_social">
+            <a href="mailto:my_snail@126.com" title="Contact me">
+              <i class='social fa fa-envelope fa-2x'></i>
+              <span class="label">Email</span>
+            </a>
+          </li>
+          
+
+          </ul>
+        </nav>
+
+        </div>
+
+        <div class = "footer_div">  
+           <p class="copyright text-muted">
+            Copyright &copy; Scott Wang 2017 Theme by <a href="http://thesnail.github.io/">thesnail</a> |
+            <iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=thesnail&repo=thesnail.github.io&type=star&count=true" >
+            </iframe>
+            </p>
+        	<div align="right">
+    			<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+          <!-- 访问统计 -->
+          <span id="busuanzi_container_site_pv">
+            本站总访问量
+            <span id="busuanzi_value_site_pv"></span>次
+          </span>
+
+        </div>
+        <div>
+    </footer>
+</section>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+  </body>
+
+</html>
