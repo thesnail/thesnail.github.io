@@ -5,8 +5,8 @@
     <description>欢迎来到我的个人xiao站~</description>
     <link>http://scott-cry.win//</link>
     <atom:link href="http://scott-cry.win//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Apr 2017 04:27:22 +0800</pubDate>
-    <lastBuildDate>Mon, 03 Apr 2017 04:27:22 +0800</lastBuildDate>
+    <pubDate>Mon, 03 Apr 2017 12:28:58 +0800</pubDate>
+    <lastBuildDate>Mon, 03 Apr 2017 12:28:58 +0800</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -29,32 +29,6 @@
         <pubDate>Mon, 03 Apr 2017 00:00:00 +0800</pubDate>
         <link>http://scott-cry.win//2017/04/React-Native%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
         <guid isPermaLink="true">http://scott-cry.win//2017/04/React-Native%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-        
-        <category>React Native</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>React Native(Hello Word)</title>
-        <description>&lt;p&gt;　　React Native(以下简称RN)的开发环境配置直接参考官方文档即可完成，不过对小白来说东西有点多，有些名词不是很好理解，这里就(官方的&lt;a href=&quot;http://facebook.github.io/react-native/&quot;&gt;安装文档&lt;/a&gt;稍微展开说一下。&lt;a href=&quot;http://reactnative.com/&quot;&gt;http://reactnative.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;　　本篇文章累计了大量评论，和我的一些解答，读者有什么问题可以先看看评论，或者搜下关键字，如果还是有问题可以给我在评论里给我留言，问题很着急的可以加我&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;问：本地部署成功了，也能预览效果，但使用 username.github.io 访问，&lt;code class=&quot;highlighter-rouge&quot;&gt;出现 404 &lt;/code&gt; .    &lt;br /&gt;
-答：首先确认 hexo d 命令执行是否报错，如果没有报错，再查看一下你的 github 的 username.github.io 仓库，你的博客是否已经成功提交了，你的 github 邮箱也要通过验证才行。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;转载请注明原地址，LCry的博客：&lt;a href=&quot;http://scott-cry.win/&quot;&gt;http://scott-cry.win/&lt;/a&gt; 谢谢！&lt;/p&gt;
-</description>
-        <pubDate>Mon, 03 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://scott-cry.win//2017/04/React-Native(Hello-Word)/</link>
-        <guid isPermaLink="true">http://scott-cry.win//2017/04/React-Native(Hello-Word)/</guid>
         
         <category>React Native</category>
         
