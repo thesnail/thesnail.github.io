@@ -15,5 +15,7 @@ for modern multiplatform applications,100% interoperable with Java™ and Androi
 
     第一步:下载插件
     [图片](images/posts/kotlin/1.png)
-    第一步:快速配置Android Studio
+    第二步:快速配置Android Studio
     [图片](images/posts/kotlin/2)
+    第三步:点击“OK”之后，Kotlin插件会自动开始配置。配置完成之后，同步一下工程（Sync Project）即可。
+    更多的用法，请见：http://kotlinlang.org/docs/tutorials/android-plugin.html
