@@ -13,7 +13,7 @@ tag: React Native
 
 ##如何学习React Native
 　　到目前为止(2017.4)React Native，相对于稳定了不少，不再向之前那样更新速度快，语法变化等，因为我之前也学过React Native,因为有一定的Html，JS,Android,IOS开发经验，所以还是看的明白，但是那样我认为学习仅仅只是会做，不能了解一些基础,于是就买了一本书，看下别人是怎么想的，但是买了之后发现和现在有一点出入，于是准备纪录下来，也方便后来的学习者。如果在学习和实践中遇到了问题，可以到网上搜索React Native的解决方法，现在有很多别人的经验，相信一定可以帮助你，如果找不到，我们也可以互相学习，共同进步.
-React Native中文网站:http://reactnative.cn
-React Native官方网站:https://facebook.github.io/react-native
-React Native GitHub:https://github.com/facebook/react-native
-React Native issues:https://github.com/facebook/react-native/issues
+　　React Native中文网站:http://reactnative.cn
+　　React Native官方网站:https://facebook.github.io/react-native
+　　React Native GitHub:https://github.com/facebook/react-native
+　　React Native issues:https://github.com/facebook/react-native/issues
