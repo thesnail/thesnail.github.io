@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Android Studio配置Kotlin开发环境的最简单方式"
-date: 2017-05-20 
+date: 2017-05-20
 description: "Android Kotlin开发环境的最简单构建方式"
 tag: Android 
---- 
+---   
 
 　　一觉醒来发现Google正式把Kotlin纳入Android程序官方的一级开发语言，这可能也在大家的意料之中,因为Google和oracle的官司
     废话不多说，首选了解一下Kotlin
