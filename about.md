@@ -13,7 +13,7 @@ title: 关于我
 &nbsp;&nbsp;&nbsp;&nbsp;React Native自学半年多, 偶尔用于公司内部的测试程序,并自己封装原生模块，因为主要涉及的是蓝牙和Wi-Fi方便的智能设备,因此也必须封装Android和IOS的BLE和TCP统一的通信模块。  
 &nbsp;&nbsp;&nbsp;&nbsp;Flutter了解了一下,未来可能是谷歌新的手机系统发展方向，暂未学习
 #### 6. AWS
-&nbsp;&nbsp;&nbsp;&nbsp;
+处理AWS服务器上的一些事情,例如编写aws lambda代码，构建[aws http gateway](https://blog.csdn.net/u012724947/article/details/52896720),处理AWS IOT服务等.
 #### 7. 关于其他方面
 &nbsp;&nbsp;&nbsp;&nbsp;了解html，nodejs，java web等. 只是很长时间没有在弄过，前段时间看了一下，发现已经跟不上时代了.
 ### 关于辞职:
