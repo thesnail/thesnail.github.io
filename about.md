@@ -16,12 +16,21 @@ title: 关于我
 处理AWS服务器上的一些事情,例如编写aws lambda代码，构建[aws http gateway](https://blog.csdn.net/u012724947/article/details/52896720),处理AWS IOT服务等.
 #### 7. 关于其他方面
 &nbsp;&nbsp;&nbsp;&nbsp;了解html，nodejs，java web等. 只是很长时间没有在弄过，前段时间看了一下，发现已经跟不上时代了.
-#### 8.已上架的个人独立开发的APP作品(包括Android and IOS)
+#### 8.已上架个人独立开发的APP作品(包括Android and IOS)
 [FenSens](https://fensens.com)我们是方案公司,App后期的维护和升级已经移交给另外一个团队.   
 [Cashew](http://gocashew.com)目前还在跟踪，可能因为资金或者其他原因，客户没有选择服务器，曾经加入过[Firebase](https://firebase.google.com)但是最终移除。
 ### 关于辞职:
 两年来一直是一个人开发Android、IOS和服务器端的事情，虽然这两年来学到不少东西，但人也很疲累,顺便辞职之后休息、调整，并且沉淀一下这两年的东西。  
-关于合同四月底到期，在三月中旬已经向公司提出了不在续签合同，在四月底或者五月中旬离职(需要留出足够的时间给公司招人,以便于把手中的事情交给另一个人)。  
+关于合同四月底到期，在三月中旬已经向公司提出了不在续签合同，在四月底或者五月中旬离职(需要留出足够的时间给公司招人,以便于把手中的事情交给另一个人)。
+### 关于我:
+#### 我的博客
+>1. [简书](https://www.jianshu.com/u/a61ac0a93a7f)
+>2. [CSDN](https://blog.csdn.net/u012724947)
+>3. [StackOverflow]()
+>4. [微信公众号](WLL6317)
+>5. [Github](https://github.com/thesnail). 
+由于个人比较懒,偶尔有时间会整理一下感觉有用的资料，方便后面查找.  
+微信公众号也是,没有在更新. 
 {% include comments.html %}
 
 
