@@ -24,13 +24,19 @@ title: 关于我
 关于合同四月底到期，在三月中旬已经向公司提出了不在续签合同，在四月底或者五月中旬离职(需要留出足够的时间给公司招人,以便于把手中的事情交给另一个人)。
 ### 关于我:
 #### 我的博客
->1. [简书](https://www.jianshu.com/u/a61ac0a93a7f)
->2. [CSDN](https://blog.csdn.net/u012724947)
+>1. [简书](https://www.jianshu.com/u/a61ac0a93a7f):https://www.jianshu.com/u/a61ac0a93a7f
+>2. [CSDN](https://blog.csdn.net/u012724947):https://blog.csdn.net/u012724947
 >3. [StackOverflow]()
->4. [微信公众号](WLL6317)
->5. [Github](https://github.com/thesnail). 
+>4. [微信公众号](WLL6317):WLL6317
+>5. [Github](https://github.com/thesnail):https://github.com/thesnail   
+>6. [Linkedin](https://www.linkedin.com/in/scott-wang):https://www.linkedin.com/in/scott-wang
 由于个人比较懒,偶尔有时间会整理一下感觉有用的资料，方便后面查找.  
 微信公众号也是,没有在更新. 
+#### 其他
+最近在使用React Native开发一个架构模版,为了便于以后在开发中使用方便和效率，根据不同需求直接向里面套入。  
+因为最早是四月底离职，还没来得及和想好如何写简历, 以上是我个人的部分信息，如果你还满意，想要了解更多信息，请联系我：  
+email：my_snail@126.com.  
+qq:1657292627. 
 {% include comments.html %}
 
 
