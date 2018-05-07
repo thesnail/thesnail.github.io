@@ -9,7 +9,7 @@ title: 关于我
 #### 3. Android App Google Play上架。
 #### 4. IOS App Store上架,并处理审核拒绝
 #### 5. React Native或者Flutter跨平台App开发
-&nbsp;&nbsp;&nbsp;&nbsp;因为在公司一直是一个人开发Android和IOS、还处理一些其他事情,时常感觉很疲累，因此闲暇时间学习并寻求跨平台开发解决方案。  
+&nbsp;&nbsp;&nbsp;&nbsp;因为在公司一直是一个人开发Android和IOS、还处理一些其他事情,为了节约开发时间同时兼容与硬件设备沟通，因此闲暇时间学习并寻求跨平台开发解决方案。 
 &nbsp;&nbsp;&nbsp;&nbsp;React Native自学半年多, 偶尔用于公司内部的测试程序,并自己封装原生模块，因为主要涉及的是蓝牙和Wi-Fi方面的智能设备,因此也必须封装Android和IOS的BLE和TCP统一的通信模块。  
 &nbsp;&nbsp;&nbsp;&nbsp;Flutter了解了一下,未来可能是谷歌新的手机系统发展方向，暂未学习
 #### 6. AWS
@@ -20,8 +20,8 @@ title: 关于我
 [FenSens](https://fensens.com)我们是方案公司,App后期的维护和升级已经移交给另外一个团队.   
 [Cashew](http://gocashew.com)目前还在跟踪，可能因为资金或者其他原因，客户没有选择服务器，曾经加入过[Firebase](https://firebase.google.com)但是最终移除。
 ### 关于辞职:
-两年来一直是一个人开发Android、IOS和服务器端的事情，虽然这两年来学到不少东西，但人也很疲累,顺便辞职之后休息、调整，并且沉淀一下这两年的东西。  
-关于合同四月底到期，在三月中旬已经向公司提出了不在续签合同，在四月底或者五月中旬离职(需要留出足够的时间给公司招人,以便于把手中的事情交给另一个人)。
+两年来一直是一个人开发Android、IOS和服务器端的事情，合同也到期，虽然公司非常好，但是感觉自身在里面发展不大，于是就顺便在五一辞职之后休息、调整，并且沉淀一下这两年的东西。
+关于合同四月底到期，在三月中旬已经向公司提出了不在续签合同
 ### 关于我:
 #### 我的博客
 >1. [简书](https://www.jianshu.com/u/a61ac0a93a7f):[https://www.jianshu.com/u/a61ac0a93a7f](https://www.jianshu.com/u/a61ac0a93a7f)
