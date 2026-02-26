@@ -1,0 +1,1 @@
+import{_ as n,a as t,b as o,d as r}from"./index-B2hT7t8S.js";const s={};function a(l,e){return r(),t("div",null,[...e[0]||(e[0]=[o("h1",null,"404 Not Found",-1),o("p",null,"The page you are looking for does not exist.",-1)])])}const d=n(s,[["render",a]]);export{d as default};
